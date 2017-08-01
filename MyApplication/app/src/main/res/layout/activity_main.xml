@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.udaymahajan.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Great App"
+        android:id="@+id/myGreatApp"
+        android:layout_marginTop="45dp"
+        android:textSize="50sp"
+        android:textColor="#060606"
+        android:background="#43ef14"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/myGreatApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="clickFunction" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myTextField"
+        android:hint="Enter your name."
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/myGreatApp"
+        android:layout_alignStart="@+id/myGreatApp" />
+</RelativeLayout>
